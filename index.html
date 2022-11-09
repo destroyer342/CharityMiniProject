@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aelpa</title>
+  </head>
+
+  <body>
+    <!--Navigation-->
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img src="./assets/logo-2.png" class="nav-logo"
+        /></a>
+        <div class="menu">
+          <a class="active" href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="nav-hamburger">
+          <span class="material-icons">menu</span>
+        </button>
+        <div class="navsearch-div">
+          <input class="nav-search" placeholder="Search" />
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <!--Hero-->
+      <section class="hero-container">
+        <div class="hero-left">
+          <img src="./assets/content-image-6.png" class="hero-img" />
+        </div>
+        <div class="hero-right">
+          <p class="hero-textone">Give Education</p>
+          <p class="hero-texttwo">Give a child the</p>
+          <p class="hero-texttwo">gift of Education</p>
+          <p class="hero-textthree">
+            Each donation is an essential help for everyone's life
+          </p>
+          <button class="hero-button">
+            <a href="home.html">DONATION NOW</a>
+          </button>
+        </div>
+      </section>
+    </header>
+    <!--About-->
+    <section class="about-container">
+      <div class="about-left">
+        <img src="./assets/about-6 (1).png" class="about-img" />
+        <img src="./assets/pattern-1.png" class="about-square" />
+        <img src="./assets/pattern-35.png" class="about-oval" />
+        <div class="about-circle">
+          <div>
+            <p class="about-45k">45K</p>
+            <p class="about-circle-text">Satisfied</p>
+            <p class="about-circle-text2">donors</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="about-aelpha">ABOUT AELPA</p>
+        <h1 class="about-aelpa-text">
+          Aelpa Make an education <br />charity donation today
+        </h1>
+        <p class="about-aelpha-description">
+          Growing up in poverty, children face many challenges: hunger and
+          <br />
+          health problems, limited access to education and medical <br />
+          services. Growing up in poverty children face many
+        </p>
+        <hr class="about-hr" />
+        <p class="about-icons-text">
+          <img class="about-icons" src="./assets/about-7.png" />20,000 poor
+          children education and empowered
+        </p>
+        <p class="about-icons-text">
+          <img class="about-icons" src="./assets/about-8.png" />42,000 children
+          lifted from poverty
+        </p>
+        <p class="about-icons-text">
+          <img class="about-icons" src="./assets/about-9.png" />9,000 children
+          healthy and nourished
+        </p>
+        <hr class="about-hr" />
+        <div class="about-charity">
+          <img class="about-icons" src="./assets/about-6.png" />
+          <p class="about-icons-text">
+            Make and education charity donation<br />
+            today and give a child the opportunity for a brighter future.
+          </p>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="card-component">
+          <img class="card-icon" src="./assets/feature-1.png" />
+          <p class="card-title">We Donate</p>
+          <p class="card-text">
+            Vivamus in magna aclorm<br />
+            tellus fringilla eleifend sit
+          </p>
+        </div>
+        <div class="card-component">
+          <img class="card-icon" src="./assets/feature-2.png" />
+          <p class="card-title">We Donate</p>
+          <p class="card-text">
+            Vivamus in magna aclorm<br />
+            tellus fringilla eleifend sit
+          </p>
+        </div>
+        <div class="card-component">
+          <img class="card-icon" src="./assets/feature-3.png" />
+          <p class="card-title">We Donate</p>
+          <p class="card-text">
+            Vivamus in magna aclorm<br />
+            tellus fringilla eleifend sit
+          </p>
+        </div>
+        <div class="card-component">
+          <img class="card-icon" src="./assets/feature-4.png" />
+          <p class="card-title">We Donate</p>
+          <p class="card-text">
+            Vivamus in magna aclorm<br />
+            tellus fringilla eleifend sit
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      var hamburger = document.querySelector(".nav-hamburger");
+      var hamburger_icon = hamburger.querySelector("span");
+      var mobile_menu = document.querySelector(".mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger_icon.innerText =
+          hamburger_icon.innerText === "menu" ? "close" : "menu";
+
+        mobile_menu.classList.toggle("is-open");
+      });
+    </script>
+  </body>
+</html>
